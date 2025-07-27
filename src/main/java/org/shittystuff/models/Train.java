@@ -24,6 +24,7 @@ public class Train {
             statement.setString(3, t.source);
             statement.setString(4, t.destination);
             statement.setInt(5, t.seats);
+            statement.execute();
         } catch (SQLException e) {
             System.out.println("ERROR: error while getting connection for db");
         }
