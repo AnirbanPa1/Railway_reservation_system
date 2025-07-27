@@ -1,3 +1,5 @@
+package org.shittystuff;
+
 import java.util.Scanner;
 
 public class Main {

@@ -1,10 +1,14 @@
-import java.sql.*;
+package org.shittystuff;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class DBConnection {
     public static Connection getConnection() throws SQLException {
         String url = "jdbc:mysql://localhost:3306/railway";
         String user = "root";
-        String password = "2003";
+        String password = "akash02k";
         return DriverManager.getConnection(url, user, password);
     }
 }

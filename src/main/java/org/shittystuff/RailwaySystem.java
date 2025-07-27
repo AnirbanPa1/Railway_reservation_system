@@ -1,3 +1,5 @@
+package org.shittystuff;
+
 import java.sql.*;
 import java.util.Scanner;
 
