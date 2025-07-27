@@ -3,7 +3,6 @@ package org.shittystuff;
 import org.shittystuff.models.Reservation;
 import org.shittystuff.models.Train;
 
-import java.sql.*;
 import java.util.Scanner;
 
 public class RailwaySystem {
