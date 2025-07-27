@@ -1,0 +1,18 @@
+CREATE DATABASE railway;
+USE railway;
+
+CREATE TABLE train (
+    train_id INT PRIMARY KEY,
+    name VARCHAR(50),
+    source VARCHAR(50),
+    destination VARCHAR(50),
+    total_seats INT
+);
+
+CREATE TABLE reservation (
+    reservation_id INT PRIMARY KEY AUTO_INCREMENT,
+    passenger_name VARCHAR(50),
+    train_id INT,
+    seats_booked INT,
+    FOREIGN KEY (train_id) REFERENCES train(train_id)
+);
