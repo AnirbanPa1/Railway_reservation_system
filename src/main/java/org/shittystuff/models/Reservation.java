@@ -33,6 +33,7 @@ public class Reservation {
             statement.setString(1, r.passengerName);
             statement.setInt(2, r.trainId);
             statement.setInt(3, r.seatsBooked);
+            statement.execute();
         } catch (SQLException e) {
             System.out.println("ERROR: error while getting connection for db");
         }
