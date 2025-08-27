@@ -1,13 +1,16 @@
+import hibernate.RailwaySystemHibernate;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        RailwaySystem rs = new RailwaySystem();
+        RailwaySystemHibernate rs = new RailwaySystemHibernate();
         Scanner sc = new Scanner(System.in);
         int choice;
 
         do {
-            System.out.println("\n||====== Railway Reservation Menu ======||");
+            System.out.println();
+            System.out.println("||====== Railway Reservation Menu ======||");
             System.out.println("|| 1. Add Train                         ||");
             System.out.println("|| 2. Book Ticket                       ||");
             System.out.println("|| 3. View All Reservations             ||");
